@@ -1,0 +1,21 @@
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8em 1.6em;
+}
+
+.cabecalho-menu-hamburguer{
+    width: 2em;
+    height: 2em;
+    background-image: url(../img/sanduiche.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.icones{
+    display: flex;
+    gap: 1.6em;
+}

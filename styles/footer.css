@@ -1,0 +1,18 @@
+.rodape{
+    background-color:#889A89;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.6em;
+}
+
+.icones-rodape{
+    display: flex;
+    gap: 2.2em;    
+}
+
+.icones-redes-sociais{
+    display: flex;
+    gap: 1.5em; 
+}
