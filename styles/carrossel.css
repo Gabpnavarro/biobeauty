@@ -33,25 +33,27 @@
 }
 
 .carousel__button {
-
-	height: 44px;
-	width: 44px;
+    background-color: transparent;
+	height: 30px;
+	width: 30px;
 	border: transparent;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	cursor: pointer;
 	position: absolute;
+    padding: 0;
+    font-size:  0;
 }
 
 .carousel__button:first-child {
-	left: 0;
+	left: 15px;
 	transform: translateX(-50%);
 	display: none;
 }
 
 .carousel__button:last-child {
-	right: 0;
+	right: 15px;
 	transform: translateX(50%);
 }
 
