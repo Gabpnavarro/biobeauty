@@ -1,21 +1,111 @@
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.cabecalho_menu-hamburquer {
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/menu_hamburguer.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+}
+
+.icones {
+  display: flex;
+  gap: 1.6em;
+}
+
+.icones__esquerda, .icones__direita{
+  display: flex;
+  gap: 1.6em;
+}
+
+.icones__esquerda{
+  display: none;
+}
+
+.lista-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  width: 45vw;
+  background-color: var(--bege);
+  padding-top: 2.4em;
+  padding-left: 2.4em;
+  z-index: 500;
+}
+
+.container__botão:checked ~ .lista-menu {
+  display: block;
+}
+
+.container__botão {
+  display: none;
+}
+
+.container__imagem {
+  padding: 1.6em;
+}
+
+.lista-menu__item {
+  padding-bottom: 2.4em;
+}
+
+.lista-menu__link {
+  color: var(--verde700);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.6em;
+}
+
+@media screen and (min-width: 768px ) {
+
 .cabecalho{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.8em 1.6em;
+  height: 56px;
 }
 
-.cabecalho-menu-hamburguer{
-    width: 2em;
-    height: 2em;
-    background-image: url(../img/sanduiche.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    display: inline-block;
-    cursor: pointer;
+.icones__esquerda{
+  display: flex;
+}
 }
 
-.icones{
-    display: flex;
-    gap: 1.6em;
+@media screen and (min-width: 1024px ) {
+ 
+.cabecalho{
+  height: 64px;
+}
+
+.cabecalho_menu-hamburquer{
+  display: none;
+}
+
+.lista-menu__link 
+{
+  font-size: 2em;
+}
+
+.lista-menu{
+  width: 60vw;
+  top: 22px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+  gap: 3em;
+}
+
+.lista-menu > li{
+  padding: 0;
+}
+
+.logo{
+  position: absolute;
+  left: 16px;
+}
 }

@@ -1,120 +1,165 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-    <script src="carrossel.js" defer></script>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+
     <title>BioBEAUTY</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="cabecalho">
-        <div class="cabecalho-menu-hamburguer">           
-        </div>
-        <h1><img src="img/logo.svg" alt="Logo"></h1>
-        <div class="icones">
-            <a href="#"><img src="img/profile.svg" alt="Ícone de perfil"></a>
-            <a href="#"><img src="img/shop.svg" alt="Ícone de sacola"></a>
-        </div>
-       </header>
-       <main>
+      <input type="checkbox" id="menu" class="container__botão" />
+      <label for="menu"
+        ><div class="cabecalho_menu-hamburquer container__imagem"></div
+      ></label>
+      <ul class="lista-menu">
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Feminino</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Masculino</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Unissex</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Nossa marca</a>
+        </li>
+      </ul>
 
+      
+        <a href="#" class="logo"
+          ><img src="img/logo.svg" alt="logo do Bio Beauty"
+        /></a>
 
+        <div class="icones container__imagem">
 
+          <div class="icones__esquerda">
+            <a href="#" class="seach"
+              ><img src="img/buscar.svg" alt="icone de 
+              sacola"
+            /></a>
+            <a href="#" class="favorite"
+              ><img src="img/favoritos.svg" alt="icone de perfil"
+            /></a>
+          </div>
 
+          <div class="icones__direita">
+            <a href="#" class="profile"
+              ><img src="img/profile.svg" alt="icone de perfil"
+            /></a>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <!-- <div class="wrapper"></div>
-            <button id="left" class="carousel-button">
-                <img src="img/seta-esquerda.svg" alt="Ir para esquerda">
-            </button>                 
-            
-            <div class="carousel">
-                <img src="img/perfume-azul.jpg" alt="Perfume azul">
-                <img src="img/perfume-rosa.jpg" alt="Perfume rosa">
-                <img src="img/perfume-verde.jpg" alt="Perfume verde">
-            </div>            
-            
-            <button id="right" class="carousel-button">
-                <img src="img/seta-direita.svg" alt="Ir para direita">
-            </button>
-        </div> -->
-            
-
-        <div class="wrapper">
-			<div class="carousel">
-				<button class="carousel__button">
-					<img src="img/seta-esquerda.svg" alt="Ir para esquerda" />
-				</button>
-				<div class="carousel__image-container">
-					<img
-						src="img/perfume-azul.jpg"
-						class="carousel__img"
-						alt="Imagem de um perfume azul"
-						draggable="false"
-					/>
-					<img
-						src="img/perfume-verde.jpg"
-						class="carousel__img"
-						alt="Imagem de um perfume verde"
-						draggable="false"
-					/>
-					<img
-						src="img/perfume-rosa.jpg"
-						class="carousel__img"
-						alt="Imagem de um perfume rosa"
-						draggable="false"
-					/>
-				</div>
-				<button class="carousel__button">
-					<img
-						src="img/seta-direita.svg"
-						alt="Ir para direita"
-					/>
-				</button>
-			</div>
-
-
-
-
-
-       </main>
-       <footer class="rodape">
-            <img src="img/logo-rodape.svg" alt="Logo do rodapé">
-            <div class="icones-rodape">
-                <img src="img/logo-cruelty-free-verde.svg" alt="Logo cruelty free verde">
-                <img src="img/logo_vegan.svg" alt="Logo vegan">
+            <a href="#" class="shop"
+              ><img src="img/shop.svg" alt="icone 
+              de sacola"
+            /></a>
+          </div>
+      </div>
+    </header>
+    <main>
+      <section class="carrossel">
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img
+                src="img/perfume_rosa.jpg"
+                alt="Perfume com embalagem rosa"
+              />
             </div>
-            <div class="icones-redes-sociais">
-                <img src="img/facebook.svg" alt="Ícone do facebook">
-                <img src="img/instagram.svg" alt="Ícone do instagram">
-                <img src="img/youtube.svg" alt="Ícone do youtube">
+            <div class="swiper-slide">
+              <img
+                src="img/perfume_azul.jpg"
+                alt="Perfume com embalagem azul"
+              />
             </div>
-       </footer>
-</body>
+            <div class="swiper-slide">
+              <img
+                src="img/perfume_verde.jpg"
+                alt="Pefume com embalagem verde"
+              />
+            </div>
+
+            ...
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar"></div>
+        </div>
+      </section>
+      <section class="sobre">
+        <h2 class="nossa_marca">Nossa Marca</h2>
+        <img
+          src="img/nossa_marca.jpg"
+          alt="Foto de apresentação dos produtos da marca"
+          class="nossa_marca-img"
+        />
+        <div class="container-texto">
+          <h3 class="titulo_texto-sobre">
+            Nós acreditamos que a beleza vem da natureza.
+          </h3>
+          <p class="texto-sobre">
+            Cada fragrância é inspirada na diversidade das plantas e flores que
+            cercam nosso mundo. Desde as notas frescas e cítricas até as
+            fragrâncias mais intensas e exóticas, temos uma opção para todos os
+            gostos.
+          </p>
+          <p class="texto-sobre">
+            Acreditamos que você pode se sentir bem e ficar bonito ao mesmo
+            tempo. E por esse motivo, além de ser sustentável e vegano, nosso
+            perfume é também luxuoso e sofisticado.
+          </p>
+          <p class="texto-sobre">
+            Nossa fragrância irá envolver você em uma experiência sensorial
+            única e duradoura.
+          </p>
+          <p class="texto-sobre">
+            Obrigado por escolher nossa marca de perfume sustentável, vegano e
+            natural. Juntos, podemos fazer uma diferença positiva no mundo.
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer class="rodape">
+      <img src="img/logo-rodape.svg" alt="Logo do rodapé" class="logo-rodape"/>
+      <div class="icones-rodape">
+        <img src="img/logo-cruelty-free-verde.svg" alt="Logo cruelty free verde" class="logo-cruelty"/>
+        <img src="img/logo_vegan.svg" alt="Logo vegan"class="logo-vegan" />
+      </div>
+      <div class="icones-redes-sociais">
+        <img src="img/facebook.svg" alt="Ícone do facebook"/>
+        <img src="img/instagram.svg" alt="Ícone do instagram"/>
+        <img src="img/youtube.svg" alt="Ícone do youtube"/>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        spaceBetween: 10,
+        slidesPerView: 1,
+        pagination: {
+          el: ".swiper-pagination",
+          type: "bullets",
+        },
+        autoplay: {
+          delay: 4000,
+        },
+      })
+    </script>
+  </body>
 </html>

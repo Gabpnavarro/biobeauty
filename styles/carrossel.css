@@ -1,63 +1,17 @@
-.wrapper {
-	width: 100%;
-
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+.swiper-slide img {
+  width: 100%;
 }
 
-.carousel {
-	position: relative;
-	display: flex;
-	align-items: center;
+.swiper-button-prev,
+.swiper-button-next {
+  display: none;
 }
 
-.carousel__image-container {
-	display: flex;
-	cursor: pointer;
-	overflow: hidden;
-	scroll-behavior: smooth;
+.swiper-pagination {
+  position: initial;
+  margin: 0.5em 0;
 }
 
-.carousel__image-container.dragging {
-	scroll-behavior: auto;
-	cursor: grab;
-}
-
-.carousel__img {
-	flex-shrink: 0;
-	height: 340px;
-	width: 100%;
-	object-fit: cover;
-}
-
-.carousel__button {
-    background-color: transparent;
-	height: 30px;
-	width: 30px;
-	border: transparent;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	cursor: pointer;
-	position: absolute;
-    padding: 0;
-    font-size:  0;
-}
-
-.carousel__button:first-child {
-	left: 15px;
-	transform: translateX(-50%);
-	display: none;
-}
-
-.carousel__button:last-child {
-	right: 15px;
-	transform: translateX(50%);
-}
-
-.carousel__button img {
-	width: 24px;
-	height: 24px;
+.swiper-scrollbar {
+  background: none;
 }

@@ -1,0 +1,55 @@
+ <!-- <section class="carrossel">
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img
+                src="img/perfume_rosa.jpg"
+                alt="Perfume com embalagem rosa"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="img/perfume_azul.jpg"
+                alt="Perfume com embalagem azul"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="img/perfume_verde.jpg"
+                alt="Pefume com embalagem verde"
+              />
+            </div>
+
+            ...
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar"></div>
+        </div>
+      </section>
+      <section class="sobre">
+        <h2 class="nossa_marca">Nossa Marca</h2>
+        <img
+          src="img/nossa_marca.jpg"
+          alt="Foto de apresentação dos produtos da marca"
+          class="nossa_marca-img"
+        />
+      </section>
+
+
+       <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        spaceBetween: 10,
+        slidesPerView: 1,
+      })
+    </script>

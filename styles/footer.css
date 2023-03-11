@@ -1,18 +1,62 @@
+.rodape {
+  background-color: #889a89;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.6em;
+}
+
+.icones-rodape {
+  display: flex;
+  gap: 2.2em;
+}
+
+.icones-redes-sociais {
+  display: flex;
+  gap: 1.5em;
+}
+
+@media screen and (min-width: 768px) {
+
 .rodape{
-    background-color:#889A89;
-    padding: 2em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.6em;
+  flex-direction: row;
+  justify-content: space-around;
+}  
+
+.logo-rodape{
+  width: 180px;
+}
+
+.logo-vegan, .logo-cruelty{
+  width: 64px;
+}
+
+.icones-redes-sociais > img{
+  width: 50px;
+}
+}  
+
+@media screen and (min-width: 1024px) {
+
+.rodape{
+  justify-content: space-between;
+}  
+
+.logo-rodape{
+  width: 250px;
+  height: 62px;
 }
 
 .icones-rodape{
-    display: flex;
-    gap: 2.2em;    
+  gap: 21em;
 }
 
-.icones-redes-sociais{
-    display: flex;
-    gap: 1.5em; 
+.logo-vegan, .logo-cruelty{
+  height: 62px;
 }
+
+.icones-redes-sociais > img{
+  width: 50px;
+}
+} 

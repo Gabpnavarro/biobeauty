@@ -1,8 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Advent+Pro:wght@300;500&display=swap");
 @import url("styles/header.css");
 @import url("styles/footer.css");
-@import url("styles/main.css");
 @import url("styles/carrossel.css");
+@import url("styles/sobre.css");
 
-:root{
-    font-size: 62.5%;
+:root {
+  font-size: 62.5%;
+  --verde500: #889a89;
+  --verde700: #4d5d4e;
+  --bege: #d0c9c0;
+  --font-principal: "Advent Pro";
+  --swiper-theme-color: var(--verde500);
+}
+
+body {
+  font-family: var(--font-principal);
 }
