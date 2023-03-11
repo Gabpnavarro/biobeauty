@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <script src="carrossel.js" defer></script>
     <title>BioBEAUTY</title>
 </head>
 <body>
@@ -13,7 +14,6 @@
         <div class="cabecalho-menu-hamburguer">           
         </div>
         <h1><img src="img/logo.svg" alt="Logo"></h1>
-        <i class="fa-solid fa-angle-left"></i>
         <div class="icones">
             <a href="#"><img src="img/profile.svg" alt="Ícone de perfil"></a>
             <a href="#"><img src="img/shop.svg" alt="Ícone de sacola"></a>
@@ -21,11 +21,93 @@
        </header>
        <main>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- <div class="wrapper"></div>
+            <button id="left" class="carousel-button">
+                <img src="img/seta-esquerda.svg" alt="Ir para esquerda">
+            </button>                 
+            
+            <div class="carousel">
+                <img src="img/perfume-azul.jpg" alt="Perfume azul">
+                <img src="img/perfume-rosa.jpg" alt="Perfume rosa">
+                <img src="img/perfume-verde.jpg" alt="Perfume verde">
+            </div>            
+            
+            <button id="right" class="carousel-button">
+                <img src="img/seta-direita.svg" alt="Ir para direita">
+            </button>
+        </div> -->
+            
+
+        <div class="wrapper">
+			<div class="carousel">
+				<button class="carousel__button">
+					<img src="img/seta-esquerda.svg" alt="Go to left" />
+				</button>
+				<div class="carousel__image-container">
+					<img
+						src="img/perfume-azul.jpg"
+						class="carousel__img"
+						alt="Image 1"
+						draggable="false"
+					/>
+					<img
+						src="img/perfume-verde.jpg"
+						class="carousel__img"
+						alt="Image 2"
+						draggable="false"
+					/>
+					<img
+						src="img/perfume-rosa.jpg"
+						class="carousel__img"
+						alt="Image 3"
+						draggable="false"
+					/>
+				</div>
+				<button class="carousel__button">
+					<img
+						src="img/seta-direita.svg"
+						alt="Go to right"
+					/>
+				</button>
+			</div>
+
+
+
+
+
        </main>
        <footer class="rodape">
             <img src="img/logo-rodape.svg" alt="Logo do rodapé">
             <div class="icones-rodape">
-                <img src="img/logo-cruelty_free_verde.svg" alt="Logo cruelty free verde">
+                <img src="img/logo-cruelty-free-verde.svg" alt="Logo cruelty free verde">
                 <img src="img/logo_vegan.svg" alt="Logo vegan">
             </div>
             <div class="icones-redes-sociais">

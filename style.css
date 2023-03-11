@@ -1,6 +1,7 @@
 @import url("styles/header.css");
 @import url("styles/footer.css");
 @import url("styles/main.css");
+@import url("styles/carrossel.css");
 
 :root{
     font-size: 62.5%;
