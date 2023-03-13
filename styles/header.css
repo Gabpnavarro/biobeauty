@@ -67,6 +67,10 @@
 .cabecalho{
   height: 56px;
 }
+  
+.lista-menu {
+  width: 25vw;
+}
 
 .icones__esquerda{
   display: flex;
