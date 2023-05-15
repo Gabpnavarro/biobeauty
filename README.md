@@ -9,4 +9,4 @@
     <li>JavaScript API</li>
   </ul>
  <h2>Contribuintes</h2>
- <p>O Projeto Bio Beauty foi desenvolvido por um time de profissionais talentosas e comprometidas. <a href="https://www.linkedin.com/in/carolinefeitosa/">Caroline Feitosa</a> e <a href="https://www.linkedin.com/in/veronicahp/">Verônica Paranhos</a> foram indispensáveis desenvolvimento e responsáveis por construir o website.</p>
+ <p>O Projeto Bio Beauty foi desenvolvido por um time de profissionais talentosas e comprometidas. <a href="https://www.linkedin.com/in/carolinefeitosa/">Caroline Feitosa</a> e <a href="https://www.linkedin.com/in/veronicahp/">Verônica Paranhos</a> foram indispensáveis no desenvolvimento e responsáveis por fazer parte da construção do website.</p>
